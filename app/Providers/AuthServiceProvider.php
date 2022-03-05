@@ -29,7 +29,7 @@ class AuthServiceProvider extends ServiceProvider
 
         $this->app->make('auth')->provider(
             'user_token',
-            function (Application $app, array $config) {
+            function ($app, array $config) {
                 return new UserTokenProvider(new UserToken($app->make('db')));
             }
         );
