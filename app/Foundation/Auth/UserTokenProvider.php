@@ -47,7 +47,7 @@ final class UserTokenProvider implements UserProvider
             $result->email
         );
     }
-
+ 
     public function validateCredentials(Authenticatable $user, array $credentials)
     {
         return false;
